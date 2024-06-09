@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #101D4B;
+}
+.header {
+  background-color: #070C1D;
+  color: #86fff9;
+  padding: 10px 20px;
+  animation: slideDown 1s ease-out;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.nav-menu a:hover {
+  color: #86fff9;
+}
+.hero-banner {
+  background-color: #101D4B;
+  color: black;
+  text-align: left;
+  padding: 40px 20px;
+  color: white;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.hero-content .profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.personal-info {
+  max-width: 600px;
+}
+.personal-info h2 {
+    color: #86fff9;
+}
+.mission-vision {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #101D4B;
+  flex-wrap: wrap;
+}
+.mission-vision h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+.mission {
+    background-image: url('pnc.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center; 
+    opacity: 0.8
+
+}
+.vision {
+    background-image: url('pnc.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center; 
+    opacity: 0.8
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+  z-index: 1; 
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.activities {
+  padding: 20px;
+}
+.activities h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.activity-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.activity-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.activity-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.activity-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.activity-card p {
+  margin-top: auto; 
+  text-align: center;
+}
+.footer {
+  background-color: #070C1D;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero-banner {
+    padding: 20px;
+  }
+  .hero-content {
+    gap: 20px;
+  }
+  .activities h2 {
+    font-size: 1.5em;
+  }
+  .activity-card {
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>Elle</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#prelim">Prelim</a></li>
+                    <li><a href="#midterm">Midterm</a></li>
+                    <li><a href="#final">Final</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero-banner">
+        <div class="hero-content">
+            <img src="formal.jpg" alt="Your Formal Picture" class="profile-pic"> <!-- Your photo -->
+            <div class="personal-info">
+                <h2>Ellen Joy A. Molo</h2>
+                <p>Hi, i'm Ellen Joy A. Molo call me "Elle" from 1CS-B <br> I picked Computer Science because I wanted to learn Frontend <br> I love making my own designs. </p>
+            </div>
+        </div>
+    </section>
+    <section class="mission-vision">
+        <h2>The Mission and Vision of UC(PNC)</h2>
+        <div class="mission card">
+            <p>As an institution of higher learning, UC (PnC) is committed to equip individuals with knowledge, skills, and values that will enable them to achieve their professional goals & provide leadership and service for national development.</p>
+        </div>
+        <div class="vision card">
+            <p>A premier institution of higher learning in Region IV, developing globally-competitive and value-laden professionals and leaders instrumental to community development and nation-building</p>
+        </div>
+    </section>
+    
+    <section id="prelim" class="activities">
+        <h2>Prelim Activities</h2>
+        <div class="activity-cards">
+            <div class="activity-card">
+                <img src="prelimreflect.jpg" alt="Prelim Activity 1">
+                <p>Prelim Reflection</p>
+            </div>
+            <div class="activity-card">
+                <img src="prelimquiz.jpg" alt="Prelim Activity 2">
+                <p>Prelim Quiz</p>
+            </div>
+            <div class="activity-card">
+                <img src="prelimlabact.png" alt="Prelim Activity 2">
+                <p>Prelim Laboratory Activity</p>
+            </div>
+            <div class="activity-card">
+                <img src="prelimlabexam.png" alt="Prelim Activity 2">
+                <p>Prelim Laboratory Exam</p>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="midterm" class="activities">
+        <h2>Midterm Activities</h2>
+        <div class="activity-cards">
+            <div class="activity-card">
+                <img src="midtermlabact.png" alt="Midterm Activity 1">
+                <p>Midterm Laboratory Activity</p>
+            </div>
+            <div class="activity-card">
+                <img src="midtermlabpractice.png" alt="Midterm Activity 1">
+                <p>Midterm Laboratory Practice</p>
+            </div>
+            <div class="activity-card">
+                <img src="midtermwrittenexam.jpg" alt="Midterm Activity 2">
+                <p>Midterm Written Exam</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="final" class="activities">
+        <h2>Final Activities</h2>
+        <div class="activity-cards">
+            <div class="activity-card">
+                <img src="finalsquiz.jpg" alt="Final Activity 1">
+                <p>Final Quiz</p>
+            </div>
+            <div class="activity-card">
+                <img src="wireframe50p.png" alt="Final Activity 1">
+                <p>Wireframe 50%</p>
+            </div>
+            <div class="activity-card">
+                <img src="wireframe.png" alt="Final Activity 2">
+                <p>Wireframe 100%</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 Ellen Joy Molo</p>
+    </footer>
+</body>
+</html>
